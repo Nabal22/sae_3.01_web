@@ -3,6 +3,8 @@ let dem = document.getElementById("dem");
 
 let hover = false;
 
+
+console.log(card);
 dem.addEventListener('mouseenter',()=>{
     for (let i = 0; i < card.length; i++) {
         console.log(i);

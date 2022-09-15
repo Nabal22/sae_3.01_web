@@ -21,6 +21,8 @@ ul{
 .displayElem{
     margin-top: 50px;
 }
-#dem{
-    background-color: bisque;
+header{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
 }
