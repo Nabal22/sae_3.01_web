@@ -1,16 +1,26 @@
-.elem{
-    background-color: blue;
-    width: 100px;
-    height: 100px;
+li{
     border: 1px solid black;
+    background-color: aliceblue;
+    padding: 1.5em;
+    margin: 0.5em;
+    width: 150px;
+    border-radius: 1em;
+    text-align: center;
 }
-.cont{
-    background-color: grey;
-    width: 1500px;
-    height: 600px;
-    border: 1px solid yellow;
+ul{
+    list-style-type: none;
     display: flex;
-    /*
-    flex-direction: row;
-    justify-content: space-around; */
+    justify-content: space-around;
+}
+.hiddenIcon{
+    visibility: hidden;
+}
+.visibleIcon{
+    visibility: visible;
+}
+.displayElem{
+    margin-top: 50px;
+}
+#dem{
+    background-color: bisque;
 }
