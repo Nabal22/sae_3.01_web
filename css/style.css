@@ -1,1 +1,11 @@
-nimporte
+header .navbar{
+    background-color: #23B5D3;
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+}
+
+.nav-link{
+    color: white;
+    font-size: large;
+    font-weight: 500;   
+}
