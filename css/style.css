@@ -1,7 +1,8 @@
 header .navbar{
-    background-color: #23B5D3;
+    background-color: #76b7c5;
     border-bottom-left-radius: 3em;
     border-bottom-right-radius: 3em;
+    width: fit-content  ;
 }
 
 .nav-link{
