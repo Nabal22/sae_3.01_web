@@ -1,12 +1,43 @@
+* {
+   margin: 0;
+   padding: 0;
+ }
+ html, body {
+   height: 100%;
+ }
+ section {
+   position: relative;
+   width: 100%;
+   height: 100%;
+ }
+
+.bg-image{ 
+   background-image: url(../media/img/bg-acceuil.jpg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   min-height: 100%;
+}
+
+header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+}
+
 header .navbar{
-    background-color: #76b7c5;
-    border-bottom-left-radius: 3em;
-    border-bottom-right-radius: 3em;
-    width: fit-content  ;
+   background-color: #e9f0f191;
+}
+
+.navbar li{
+   border: 0.5px solid black;
+   border-radius: 10%;
+   list-style: none;
+   padding: 0.3em;
+   margin: 0.5em;
 }
 
 .nav-link{
-    color: white;
     font-size: large;
     font-weight: 500;   
 }
@@ -18,16 +49,10 @@ header .navbar{
     padding-right: 10em;
 
  }
-
  #logo1{
-    width: 10%;
-    height: auto;
     margin-left: 2em;
  }
  #icone{
-    /* margin-left: auto;
-    margin-right: auto; */
     display: flex;
     justify-content: center;
-
  }
