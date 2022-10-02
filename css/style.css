@@ -1,14 +1,23 @@
-header .navbar{
-    background-color: #76b7c5;
-    border-bottom-left-radius: 3em;
-    border-bottom-right-radius: 3em;
-    width: fit-content  ;
+eader{
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+}
+
+.bg-header{
+   background-color: #e9f0f1af;
+}
+
+.navbar li{
+   list-style: none;
+   padding: 0.3em;
+   margin: 0.5em;
 }
 
 .nav-link{
-    color: white;
     font-size: large;
-    font-weight: 500;   
+    font-weight: 500;
 }
 
  #article{
@@ -18,18 +27,47 @@ header .navbar{
     padding-right: 10em;
 
  }
-
  #logo1{
-    width: 10%;
-    height: auto;
     margin-left: 2em;
  }
  #icone{
-    /* margin-left: auto;
-    margin-right: auto; */
     display: flex;
     justify-content: center;
-
  }
 
- 
+@keyframes apparitionSousMenu {
+   0% {
+     box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
+     border-top: 2px solid #2169EC;
+   }
+   30% {
+     box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+   }
+   100% {
+     max-height: 8em;
+     border-top: 2px solid #2169EC;
+     box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+   }
+ }
+
+.sous-menu{
+   overflow :hidden;
+   max-height : 0;
+}
+.sous-menu ul li{
+   text-align: center;
+}
+
+.sous-menu ul li:hover{
+   border-bottom: 1px solid rgb(209, 209, 24);
+   cursor: pointer;
+}
+
+#menu-deroulant:hover > .sous-menu {
+   animation: apparitionSousMenu 0.5s forwards;
+ }
+
+ @media screen and (max-width: 1024px)
+ {
+
+ }
