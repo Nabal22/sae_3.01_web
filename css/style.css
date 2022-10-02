@@ -12,10 +12,9 @@
  }
 
 .bg-image{ 
-   background-image: url(../media/img/bg-acceuil.jpg);
+   background-image: url(../media/img/bg-acceuil-v2.jpg);
    background-repeat: no-repeat;
-   background-size: contain;
-   min-height: 100%;
+   background-size:cover;
 }
 
 header{
@@ -25,13 +24,11 @@ header{
    right: 0;
 }
 
-header .navbar{
-   background-color: #e9f0f191;
+.bg-header{
+   background-color: #e9f0f1af;
 }
 
 .navbar li{
-   border: 0.5px solid black;
-   border-radius: 10%;
    list-style: none;
    padding: 0.3em;
    margin: 0.5em;
@@ -39,7 +36,7 @@ header .navbar{
 
 .nav-link{
     font-size: large;
-    font-weight: 500;   
+    font-weight: 500;
 }
 
  #article{
@@ -55,4 +52,41 @@ header .navbar{
  #icone{
     display: flex;
     justify-content: center;
+ }
+
+@keyframes apparitionSousMenu {
+   0% {
+     box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
+     border-top: 2px solid #2169EC;
+   }
+   30% {
+     box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+   }
+   100% {
+     max-height: 8em;
+     border-top: 2px solid #2169EC;
+     box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+   }
+ }
+
+.sous-menu{
+   overflow :hidden;
+   max-height : 0;
+}
+.sous-menu ul li{
+   text-align: center;
+}
+
+.sous-menu ul li:hover{
+   border-bottom: 1px solid rgb(209, 209, 24);
+   cursor: pointer;
+}
+
+#menu-deroulant:hover > .sous-menu {
+   animation: apparitionSousMenu 0.5s forwards;
+ }
+
+ @media screen and (max-width: 1024px)
+ {
+
  }

@@ -11,33 +11,68 @@
         <link rel="stylesheet" href="css/style.css">
 
         <script src="https://kit.fontawesome.com/ea6355d6e4.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="jquery-3.6.1.min.js" ></script>
     </head>
     <body>
         <section class="bg-image"></section>
 
-        <header>
-            <nav class="navbar d-flex flex-row sm-flex-column justify-content-around">
-                <a class="nav-link ps-3 pe-3">Actualités</a>
-                <div class="d-flex flex-column justify-content-around align-items-center">
-                    <a class="nav-link ps-3 pe-3 mb-auto" data-bs-toggle="collapse" data-bs-target="#collapseExample" href="demarches.html">Vos Démarches</a>
-                    <div class="collapse" id="collapseExample">
+        <header class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+            
+            <nav class="navbar d-flex flex-column flex-lg-row justify-content-between align-items-center bg-header p-2 pb-3">
+                <a class="nav-link p-3 pt-0 d-block d-xl-none " href="index.html">
+                    <img src="media/img/logo-little.png" alt="Logo CASBT">
+                </a>
+    
+                <a class="nav-link ps-3 pe-3" href="#">Actualités</a>
+                <div id="menu-deroulant" class="d-flex flex-column align-items-center">
+                    <a class="nav-link  mb-auto" href="demarches.html">Vos Démarches</a>
+                    <div class="d-flex flex-row sm-flex-column sous-menu"> 
                         <ul class="d-flex flex-column">
                             <li>Etat Civil</li>
                             <li>Jeunesse</li>
+                        </ul>
+                        <ul class="d-flex flex-column">
                             <li>Trésor Public</li>
                             <li>Urbanisme</li>
                         </ul>
-                    </div>
-                    
+                    </div>  
                 </div>
-                
-                <a class="nav-link ps-3 pe-3 " href="index.html">
+
+                <a class="nav-link p-3 pt-0 d-none d-xl-block " href="index.html">
                     <img src="media/img/logo.png" alt="Logo CASBT">
                 </a>
-                <a class="nav-link ps-3 pe-3" href="#">Découvrir la région</a>
-                <a class="nav-link ps-3 pe-3" href="#">Infos Utiles</a>
+
+                <div id="menu-deroulant" class="d-flex flex-column align-items-center justify-content-center">
+                    <a class="nav-link" href="">Découvrir la région</a>
+                    <div class="d-flex sous-menu"> 
+                        <ul class="d-flex flex-column ">
+                            <li>Activités</li>
+                            <li>Se déplacer</li>
+                        </ul>
+                        <ul class="d-flex flex-column">
+                            <li>Sortir</li>
+                            <li>Culture</li>
+                        </ul>
+                    </div>  
+                </div>
+
+                <div id="menu-deroulant" class="d-flex flex-column align-items-center justify-content-center">
+                    <a class="nav-link mb-auto" href="">Infos Utiles</a>
+                    <div class="d-flex sous-menu"> 
+                        <ul class="d-flex flex-column ">
+                            <li>FAQ</li>
+                            <li>Les élus</li>
+                        </ul>
+                        <ul class="d-flex flex-column">
+                            <li>Les communes</li>
+                            <li>Se loger</li>
+                        </ul>
+                    </div>  
+                </div>
             </nav>
         </header>
+
+        
 
         <footer>
 
