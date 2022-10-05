@@ -11,6 +11,11 @@
    height: 100%;
  }
 
+ a { 
+   color: inherit;
+   text-decoration: none;
+} 
+
 .bg-image{ 
    background-image: url(../media/img/bg-acceuil-v2.jpg);
    background-repeat: no-repeat;
@@ -37,6 +42,7 @@ header{
 .nav-link{
     font-size: large;
     font-weight: 500;
+   width: 13em;
 }
 
  #article{
@@ -73,8 +79,11 @@ header{
    overflow :hidden;
    max-height : 0;
 }
+
 .sous-menu ul li{
    text-align: center;
+   font-size:medium;
+   font-weight: 400;
 }
 
 .sous-menu ul li:hover{
@@ -86,7 +95,11 @@ header{
    animation: apparitionSousMenu 0.5s forwards;
  }
 
- @media screen and (max-width: 1024px)
+ @media screen and (max-width: 1040px)
  {
-
+   .nav-link{
+      font-size: large;
+      font-weight: 500;
+      width: 11em;
+  }
  }
