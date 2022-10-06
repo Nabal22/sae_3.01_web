@@ -135,7 +135,7 @@ animation: apparitionSousMenu 0.5s forwards;
    top: 200px;
    right: 0px;
    left: 0px;
-   bottom: 50px;
+   bottom: 20px;
 }
 
 .welcome-title h1{
@@ -158,6 +158,7 @@ animation: apparitionSousMenu 0.5s forwards;
 
 .welcome-title a:hover{
    transform:scale(1.25);
+   border: 2px solid #6EAE68;
 }
 
 @media screen and (max-width: 768px)
@@ -179,25 +180,25 @@ animation: apparitionSousMenu 0.5s forwards;
 
 /**----------------------------------------------------------------Anase----------------------**/
 
- /* --------- Card Animation ---------- */
-.card:not(:empty):hover,
-.card:not(:empty):focus {
+ /* --------- card-custom Animation ---------- */
+.card-custom:not(:empty):hover,
+.card-custom:not(:empty):focus {
   z-index: 1;
   color: #ffffff;
   opacity: 1;
   transform: scale(1.01);
   cursor: pointer;
 }
-.card:not(:empty):hover:after,
-.card:not(:empty):focus:after {
+.card-custom:not(:empty):hover:after,
+.card-custom:not(:empty):focus:after {
   opacity: 1;
 }
-.card:not(:empty):hover:before,
-.card:not(:empty):focus:before {
+.card-custom:not(:empty):hover:before,
+.card-custom:not(:empty):focus:before {
   opacity: 0;
 }
 
-.card {
+.card-custom {
   padding: 10px;
   background-image: url("https://www.ou-et-quand.net/partir/images/illustration/oualler/guadeloupe-basse-terre_46.jpg");
   background-size: cover;
@@ -210,13 +211,13 @@ animation: apparitionSousMenu 0.5s forwards;
   transition: all 0.4s cubic-bezier(0.33, 1, 0.68, 1);
   transition-property: transform, color, opacity;
 }
-.card:not(:empty):before {
+.card-custom:not(:empty):before {
   box-shadow: -2px 2px 8px 2px hsla(0deg, 0%, 0%, 0.2);
 }
-.card:empty {
+.card-custom:empty {
   opacity: 0.3;
 }
-.card:before, .card:after {
+.card-custom:before, .card-custom:after {
   content: "";
   position: absolute;
   border-radius: 0.7em;
@@ -227,7 +228,7 @@ animation: apparitionSousMenu 0.5s forwards;
   height: 100%;
   transition: opacity 0.4s cubic-bezier(0.33, 1, 0.68, 1);
 }
-.card:after {
+.card-custom:after {
   box-shadow: -20px 20px 12px 6px hsla(0deg, 0%, 0%, 0.2);
   opacity: 0;
 }
@@ -246,18 +247,10 @@ animation: apparitionSousMenu 0.5s forwards;
 
 .item0 {
   grid-area: 1/1/1/3;
-  /*&.card:hover,
-  &.card:focus {
-  	background: #9595a5;
-  }*/
 }
 
 .item1 {
   grid-area: 2/1/5/3;
-  /*&.card:hover,
-  &.card:focus {
-  	background: #9595a5;
-  }*/
 }
 
 .item2 {
@@ -319,29 +312,29 @@ body.actu {
   margin: auto;
 }
 
-h1,
-h2,
-h3,
-h5 {
+.card-custom h1,
+.card-custom h2,
+.card-custom h3,
+.card-custom h5 {
   margin: 2.75rem 0 1.05rem;
   line-height: 1.2;
   font-family: "Jost", sans-serif;
 }
 
-h4, p {
+.card-custom h4, p {
   text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
 
-h1 {
+.contentUp h1 {
   margin-top: 0;
   font-size: 3.052em;
 }
 
-h2 {
+.card-custom h2 {
   font-size: 1em;
 }
 
-p {
+.card-custom p {
   line-height: 1.3;
 }
 
@@ -355,11 +348,11 @@ p {
   .item1 {
     grid-area: 1/1/2/3;
   }
-  .card {
+  .card-custom {
     grid-area: auto;
     text-align: left;
   }
-  .card:empty {
+  .card-custom:empty {
     display: none;
   }
 }
