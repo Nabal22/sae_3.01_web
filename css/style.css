@@ -1,3 +1,7 @@
+:root {
+   --bg-color: #e9f0f1af;
+ }
+
 * {
    margin: 0;
    padding: 0;
@@ -30,7 +34,7 @@ header{
 }
 
 .bg-header{
-   background-color: #e9f0f1af;
+   background-color: var(--bg-color);
 }
 
 .navbar li{
@@ -84,6 +88,7 @@ header{
    text-align: center;
    font-size:medium;
    font-weight: 400;
+   margin: 0;
 }
 
 .sous-menu ul li:hover{
@@ -93,13 +98,71 @@ header{
 
 #menu-deroulant:hover > .sous-menu {
    animation: apparitionSousMenu 0.5s forwards;
- }
+}
 
- @media screen and (max-width: 1040px)
- {
-   .nav-link{
-      font-size: large;
-      font-weight: 500;
-      width: 11em;
-  }
- }
+@media screen and (max-width: 1040px)
+{
+.nav-link{
+   font-size: large;
+   font-weight: 500;
+   width: 11em;
+}
+
+.nav-link a{
+pointer-events: none;
+}
+
+li a {
+pointer-events:all;
+}
+
+#menu-deroulant:active > .sous-menu {
+animation: apparitionSousMenu 0.5s forwards;
+}
+}
+
+@media screen and (max-width: 768px)
+{
+.navbar{
+   width: 300px;
+}
+}
+
+/* Page Acceuil */
+
+.welcome-title{
+   position: absolute;
+   top: 200px;
+   right: 0px;
+   left: 0px;
+   bottom: 50px;
+}
+
+.welcome-title h1{
+   border-radius: 15px;
+   width:80%;
+   text-align: center;
+   color: #6EAE68 ;
+   background-color: var(--bg-color);
+}
+
+.welcome-title h1:hover{
+   color: var(--bg-color) ;
+   background-color: #6EAE68;
+}
+
+.welcome-title a{
+   background-color: var(--bg-color);
+   border-radius: 50%;
+   }
+
+.welcome-title a:hover{
+   transform:scale(1.25);
+}
+
+@media screen and (max-width: 768px)
+{
+.navbar{
+   width: 300px;
+}
+}
