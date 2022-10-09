@@ -26,6 +26,8 @@
    background-size:cover;
 }
 
+ /* HEADER */
+
 header{
    position: fixed;
    top: 0;
@@ -46,23 +48,14 @@ header{
 .nav-link{
     font-size: large;
     font-weight: 500;
-   width: 13em;
+    width: 13em;
 }
 
- #article{
-    text-align: center;
-    padding-top: 3em;
-    padding-left: 10em;
-    padding-right: 10em;
+.nav-link a {
+    color: black;
+    text-decoration: none;
+}
 
- }
- #logo1{
-    margin-left: 2em;
- }
- #icone{
-    display: flex;
-    justify-content: center;
- }
 
 @keyframes apparitionSousMenu {
    0% {
@@ -161,6 +154,10 @@ animation: apparitionSousMenu 0.5s forwards;
    border: 2px solid #6EAE68;
 }
 
+.carousel{
+  width: 80%;
+}
+
 @media screen and (max-width: 768px)
 {
 .navbar{
@@ -168,14 +165,13 @@ animation: apparitionSousMenu 0.5s forwards;
 }
 }
 
- @media screen and (max-width: 1040px)
- {
-   .nav-link{
-      font-size: large;
-      font-weight: 500;
-      width: 11em;
+@media screen and (max-width: 1040px){
+  .nav-link{
+    font-size: large;
+    font-weight: 500;
+    width: 11em;
   }
- }
+}
 
 
 /**----------------------------------------------------------------Anase----------------------**/
@@ -362,6 +358,46 @@ body.actu {
   position: static;
 }
 .AllSpace{
-height: auto;
+  height: auto;
 }
  /**--------------------------------------------------------------------------------------------------------------------------Fin Du Css Anase----------------------**/
+/* Marion */
+
+#article{
+  text-align: center;
+  padding-top: 3em;
+  padding-left: 10em;
+  padding-right: 10em;
+
+}
+#logo1{
+  margin-left: 2em;
+}
+#icone{
+  display: flex;
+  justify-content: center;
+}
+
+#carouselExampleIndicators{
+  width: 700px;
+  text-align: center;
+}
+
+/* FOOTER */
+
+footer{
+  background-color: #fffcec;
+}
+
+.adress-footer {
+  background-color: #6EAE68;
+  color: #fffcec;
+}
+
+.newsletter-footer{
+  color: #6EAE68;
+}
+
+.newsletter-footer span{
+  font-size: larger;
+}
