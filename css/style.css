@@ -1,5 +1,6 @@
 :root {
    --bg-color: #e9f0f1af;
+   --bg-page: #fffcec;
  }
 
 * {
@@ -8,6 +9,7 @@
  }
  html, body {
    height: 100%;
+   background: #e8ece7;
  }
  section {
    position: relative;
@@ -29,6 +31,7 @@
  /* HEADER */
 
 header{
+  z-index: 1 ;
    position: fixed;
    top: 0;
    left: 0;
@@ -37,6 +40,8 @@ header{
 
 .bg-header{
    background-color: var(--bg-color);
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
 }
 
 .navbar li{
@@ -383,21 +388,41 @@ body.actu {
   text-align: center;
 }
 
-/* FOOTER */
-
-footer{
-  background-color: #fffcec;
-}
+/* FOOTER */  
 
 .adress-footer {
+  width: 70%;
   background-color: #6EAE68;
-  color: #fffcec;
+  color: var(--bg-page);
 }
 
 .newsletter-footer{
+  width: 30%;
   color: #6EAE68;
+  background-color: var(--bg-page);
 }
 
 .newsletter-footer span{
   font-size: larger;
 }
+
+@media only screen and (max-width: 768px) {
+  .newsletter-footer span{
+    font-size:medium;
+  }
+
+  .adress-footer {
+    width: 100%;
+    background-color: #6EAE68;
+    color: var(--bg-page);
+  }
+  
+  .newsletter-footer{
+    width: 100%;
+    color: #6EAE68;
+    background-color: var(--bg-page);
+  }
+}
+
+/* CONTACT */
+
