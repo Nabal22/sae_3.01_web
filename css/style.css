@@ -1,6 +1,7 @@
 :root {
    --bg-color: #e9f0f1af;
    --bg-page: #fffcec;
+   --custom-green : #6EAE68;
  }
 
 * {
@@ -140,13 +141,13 @@ animation: apparitionSousMenu 0.5s forwards;
    border-radius: 15px;
    width:80%;
    text-align: center;
-   color: #6EAE68 ;
+   color: var(--custom-green) ;
    background-color: var(--bg-color);
 }
 
 .welcome-title h1:hover{
    color: var(--bg-color) ;
-   background-color: #6EAE68;
+   background-color: var(--custom-green);
 }
 
 .welcome-title a{
@@ -156,7 +157,7 @@ animation: apparitionSousMenu 0.5s forwards;
 
 .welcome-title a:hover{
    transform:scale(1.25);
-   border: 2px solid #6EAE68;
+   border: 2px solid var(--custom-green);
 }
 
 .carousel{
@@ -392,13 +393,13 @@ body.actu {
 
 .adress-footer {
   width: 70%;
-  background-color: #6EAE68;
+  background-color: var(--custom-green);
   color: var(--bg-page);
 }
 
 .newsletter-footer{
   width: 30%;
-  color: #6EAE68;
+  color: var(--custom-green);
   background-color: var(--bg-page);
 }
 
@@ -413,16 +414,27 @@ body.actu {
 
   .adress-footer {
     width: 100%;
-    background-color: #6EAE68;
+    background-color: var(--custom-green);
     color: var(--bg-page);
   }
   
   .newsletter-footer{
     width: 100%;
-    color: #6EAE68;
+    color: var(--custom-green);
     background-color: var(--bg-page);
   }
 }
 
 /* CONTACT */
+.contact-card{
+  margin-top: 230px;
+}
 
+.contact-card-body{
+  width: 60%;
+}
+
+.contact-card-body h1{
+  color: var(--custom-green);
+  border-bottom: 2px solid var(--custom-green) ;
+}
