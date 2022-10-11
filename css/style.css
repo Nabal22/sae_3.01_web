@@ -26,7 +26,7 @@
 .bg-image{ 
    background-image: url(../media/img/bg-acceuil-v2.jpg);
    background-repeat: no-repeat;
-   background-size:cover;
+   background-size: cover;
 }
 
  /* HEADER */
@@ -427,14 +427,19 @@ body.actu {
 
 /* CONTACT */
 .contact-card{
-  margin-top: 230px;
+  margin-top: 150px;
 }
 
 .contact-card-body{
-  width: 60%;
+  width: 70%;
 }
 
 .contact-card-body h1{
   color: var(--custom-green);
   border-bottom: 2px solid var(--custom-green) ;
+}
+@media only screen and (max-width: 768px) {
+  .contact-card{
+    margin-top: 230px;
+  }
 }
