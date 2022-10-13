@@ -1,6 +1,6 @@
 :root {
    --bg-color: #e9f0f1af;
-   --bg-page: #fffcec;
+   --bg-page: #f8f4e2;
    --custom-green : #6EAE68;
  }
 
@@ -10,7 +10,7 @@
  }
  html, body {
    height: 100%;
-   background: #e8ece7;
+   background: var(--bg-page);
  }
  section {
    position: relative;
@@ -166,9 +166,9 @@ animation: apparitionSousMenu 0.5s forwards;
 
 @media screen and (max-width: 768px)
 {
-.navbar{
-   width: 300px;
-}
+  .navbar{
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 1040px){
@@ -245,10 +245,11 @@ animation: apparitionSousMenu 0.5s forwards;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-gap: 20px;
+  margin-top: 200px;
 }
 
 .item0 {
-  grid-area: 1/1/1/3;
+  grid-area: 1/1/1/5;
 }
 
 .item1 {
@@ -307,7 +308,7 @@ animation: apparitionSousMenu 0.5s forwards;
 
 body.actu {
   font-family: "PT Sans", sans-serif;
-  background: #e8ece7;
+  background: var(--bg-page);
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -323,7 +324,7 @@ body.actu {
   font-family: "Jost", sans-serif;
 }
 
-.card-custom h4, p {
+.card-custom h4, .card-custom p {
   text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
 
@@ -434,12 +435,33 @@ body.actu {
   width: 70%;
 }
 
-.contact-card-body h1{
+h1{
   color: var(--custom-green);
   border-bottom: 2px solid var(--custom-green) ;
 }
 @media only screen and (max-width: 768px) {
   .contact-card{
     margin-top: 230px;
+  }
+}
+
+/* FAQ */
+
+.faq-link a{
+  width: 500px;
+  height: 100px;
+  background-color: #2169EC;
+  color: white;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: xx-large;
+}
+.faq-link-place{
+  margin-top: 180px;
+}
+@media only screen and (max-width: 768px) {
+  .faq-link-place{
+    margin-top: 296px;
   }
 }
