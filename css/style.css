@@ -447,21 +447,38 @@ h1{
 
 /* FAQ */
 
+.faq-link a:hover{
+  transform: scale(1.15);
+}
+
 .faq-link a{
   width: 500px;
   height: 100px;
-  background-color: #2169EC;
+  background-color: var(--custom-green);
   color: white;
-  margin: 10px;
+  margin: 15px;
   border-radius: 5px;
   text-align: center;
   font-size: xx-large;
+  transition: all 0.1s;
+}
+.faq-link h1{
+  width: 80%;
 }
 .faq-link-place{
   margin-top: 180px;
+  background-color: var(--bg-page);
+}
+.notice-target-container{
+  margin-top: 100px;
+  background-color: var(--bg-page);
 }
 @media only screen and (max-width: 768px) {
   .faq-link-place{
     margin-top: 296px;
   }
+  .notice-target-container{
+    margin-top: 200px;
+  }
 }
+
