@@ -1,6 +1,5 @@
 var numCard = -1;
 
-
 function showText(nb){
         if(nb!=numCard){
             
