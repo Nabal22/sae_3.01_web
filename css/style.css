@@ -445,6 +445,16 @@ h1{
   }
 }
 
+/*---------------------- Infos Pratiques ------------------*/
+.place-infos{
+  margin-top: 230px;
+}
+
+@media only screen and (max-width: 768px) {
+  .place-infos{
+    margin-top: 230px;
+  }
+}
 /* FAQ */
 
 .faq-link a:hover{
