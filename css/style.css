@@ -482,3 +482,16 @@ h1{
   }
 }
 
+/* TARIFS ET REGLEMENT */
+.tarifs-tab{
+  margin-top: 170px;
+  width: 80%;
+}
+th{
+  background-color: var(--custom-green)!important;
+}
+@media only screen and (max-width: 768px) {
+  .tarifs-tab{
+    margin-top: 225px;
+  }
+}
