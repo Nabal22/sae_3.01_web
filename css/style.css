@@ -455,6 +455,7 @@ h1{
 /*---------------------- Infos Pratiques ------------------*/
 .place-infos{
   margin-top: 230px;
+  background-color: var(--bg-page);
 }
 
 @media only screen and (max-width: 768px) {
@@ -462,13 +463,33 @@ h1{
     margin-top: 230px;
   }
 }
+.circle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px;
+  min-width: 150px;
+  min-height: 150px;
+  border-radius: 50%;
+  background-color: #FFEB68;
+  font-size: large;
+  transition: all 0.1s;
+}
+.circle:hover{
+  text-decoration: none;
+  transform: scale(1.15)
+}
 /* FAQ */
 
-.faq-link a:hover{
+.card-green a:hover{
   transform: scale(1.15);
 }
 
-.faq-link a{
+.card-green a{
   width: 500px;
   height: 100px;
   background-color: var(--custom-green);
@@ -479,10 +500,10 @@ h1{
   font-size: xx-large;
   transition: all 0.1s;
 }
-.faq-link h1{
+.card-green h1{
   width: 80%;
 }
-.faq-link-place{
+.card-green-place{
   margin-top: 180px;
   background-color: var(--bg-page);
 }
@@ -491,7 +512,7 @@ h1{
   background-color: var(--bg-page);
 }
 @media only screen and (max-width: 768px) {
-  .faq-link-place{
+  .card-green-place{
     margin-top: 296px;
   }
   .notice-target-container{
