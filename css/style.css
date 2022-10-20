@@ -1,26 +1,26 @@
 :root {
-   --bg-color: #e9f0f1af;
-   --bg-page: #f8f4e2;
-   --custom-green : #6EAE68;
- }
+  --bg-color: #e9f0f1af;
+  --bg-page: #f8f4e2;
+  --custom-green : #6EAE68;
+}
 
 * {
-   margin: 0;
-   padding: 0;
- }
- html, body {
-   height: 100%;
-   background: var(--bg-page)!important;
- }
- section {
-   position: relative;
-   width: 100%;
-   height: 100%;
- }
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  background: var(--bg-page)!important;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
- a { 
-   color: inherit;
-   text-decoration: none!important;
+a { 
+  color: inherit;
+  text-decoration: none!important;
 } 
 a:hover{
   color: white;
@@ -65,7 +65,6 @@ header{
     text-decoration: none;
 }
 
-
 @keyframes apparitionSousMenu {
    0% {
      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
@@ -106,23 +105,23 @@ header{
 
 @media screen and (max-width: 1040px)
 {
-.nav-link{
-   font-size: large;
-   font-weight: 500;
-   width: 11em;
-}
+  .nav-link{
+    font-size: large;
+    font-weight: 500;
+    width: 11em;
+  }
 
-.nav-link a{
-pointer-events: none;
-}
+  /* .nav-link a{
+  pointer-events: none;
+  } */
 
-li a {
-pointer-events:all;
-}
+  /* li a {
+  pointer-events:all;
+  } */
 
-#menu-deroulant:active > .sous-menu {
-animation: apparitionSousMenu 0.5s forwards;
-}
+  /* #menu-deroulant:active > .sous-menu {
+  animation: apparitionSousMenu 0.5s forwards;
+  } */
 }
 
 @media screen and (max-width: 768px)
@@ -465,7 +464,7 @@ h1{
 
 @media only screen and (max-width: 768px) {
   .place-infos{
-    margin-top: 230px;
+    margin-top: 270px;
   }
 }
 
@@ -482,8 +481,7 @@ h1{
   min-width: 150px;
   min-height: 150px;
   border-radius: 50%;
-  background-color: #FFEB68;
-  border: 1px solid #FFEB68;
+  background-color: #f3e066;
   font-size: large;
   transition: all 0.1s;
   -webkit-box-shadow: -7px 10px 20px 5px rgba(197, 187, 45, 0.596);
@@ -497,6 +495,15 @@ h1{
 }
 .circle span{
   color: white;
+}
+.infos-prat a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.infos-prat a i{
+  /* background-color: #4e7d4a;  */
+  padding-right: 15px;
 }
 /* FAQ */
 
@@ -525,6 +532,7 @@ h1{
   margin-top: 180px;
   background-color: var(--bg-page);
 }
+
 .notice-target-container{
   margin-top: 100px;
   background-color: var(--bg-page);
@@ -535,6 +543,11 @@ h1{
   }
   .notice-target-container{
     margin-top: 200px;
+  }
+  .card-green a{
+    width: 500px;
+    height: 100px;
+    font-size: medium;
   }
 }
 
