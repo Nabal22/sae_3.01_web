@@ -1,0 +1,49 @@
+.welcome-title{
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    left: 0px;
+    bottom: 20px;
+ }
+ 
+ .welcome-title h1{
+    border-radius: 15px;
+    width:80%;
+    text-align: center;
+    color: var(--custom-green) ;
+    background-color: var(--bg-color);
+ }
+ 
+ .welcome-title h1:hover{
+    color: var(--bg-color) ;
+    background-color: var(--custom-green);
+ }
+ 
+ .welcome-title a{
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    }
+ 
+ .welcome-title a:hover{
+    transform:scale(1.25);
+    border: 2px solid var(--custom-green);
+ }
+ 
+ .carousel{
+   width: 80%;
+ }
+ 
+ @media screen and (max-width: 768px)
+ {
+   .navbar{
+     width: 300px;
+   }
+ }
+ 
+ @media screen and (max-width: 1040px){
+   .nav-link{
+     font-size: large;
+     font-weight: 500;
+     width: 11em;
+   }
+ }
