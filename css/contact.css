@@ -1,0 +1,17 @@
+.contact-card{
+    margin-top: 150px;
+  }
+  
+  .contact-card-body{
+    width: 70%;
+  }
+  
+  h1{
+    color: var(--custom-green);
+    border-bottom: 2px solid var(--custom-green) ;
+  }
+  @media only screen and (max-width: 768px) {
+    .contact-card{
+      margin-top: 230px;
+    }
+  }

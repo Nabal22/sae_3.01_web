@@ -1,0 +1,116 @@
+article{
+    margin-top: 200px;
+}
+@media screen and (max-width: 1040px)
+{   
+    article{
+        margin-top: 200px;
+    }
+}
+.place-infos{
+    margin-top: 230px;
+    background-color: var(--bg-page);
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .place-infos{
+      margin-top: 270px;
+    }
+  }
+  
+  .circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    margin: 20px;
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 50%;
+    background-color: #f3e066;
+    font-size: large;
+    transition: all 0.1s;
+    -webkit-box-shadow: -7px 10px 20px 5px rgba(197, 187, 45, 0.596);
+    -moz-box-shadow: -7px 10px 20px 5px rgba(197, 187, 45, 0.596);
+    box-shadow: -7px 10px 20px 5px rgba(197, 187, 45, 0.596);
+  }
+  .circle:hover{
+    text-decoration: none;
+    transform: scale(1.15);
+    cursor: pointer;
+  }
+  .circle span{
+    color: white;
+  }
+  .infos-prat a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .infos-prat a i{
+    /* background-color: #4e7d4a;  */
+    padding-right: 15px;
+  }
+  /* FAQ */
+  
+  .card-green a:hover{
+    transform: scale(1.15);
+  }
+  
+  .card-green a{
+    width: 500px;
+    height: 100px;
+    background-color: var(--custom-green);
+    color: white;
+    margin: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: xx-large;
+    transition: all 0.1s;
+    -webkit-box-shadow: -7px 10px 20px 5px rgba(57,145,48,0.55);
+    -moz-box-shadow: -7px 10px 20px 5px rgba(57,145,48,0.55);
+    box-shadow: -7px 10px 20px 5px rgba(57,145,48,0.55);
+  }
+  .card-green h1{
+    width: 80%;
+  }
+  .card-green-place{
+    margin-top: 180px;
+    background-color: var(--bg-page);
+  }
+  
+  .notice-target-container{
+    margin-top: 100px;
+    background-color: var(--bg-page);
+  }
+  @media only screen and (max-width: 768px) {
+    .card-green-place{
+      margin-top: 296px;
+    }
+    .notice-target-container{
+      margin-top: 200px;
+    }
+    .card-green a{
+      width: 500px;
+      height: 100px;
+      font-size: medium;
+    }
+  }
+  
+  /* TARIFS ET REGLEMENT */
+  .tarifs-tab{
+    margin-top: 170px;
+    width: 80%;
+  }
+  th{
+    background-color: var(--custom-green)!important;
+  }
+  @media only screen and (max-width: 768px) {
+    .tarifs-tab{
+      margin-top: 225px;
+    }
+  }
