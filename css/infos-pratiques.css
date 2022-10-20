@@ -56,6 +56,15 @@ article{
     padding-right: 15px;
   }
   /* FAQ */
+
+.retour-faq a{
+  margin: 10px;
+}
+.retour-faq{
+  font-size: x-large;
+  margin-top: 160px;
+  background-color: var(--bg-page)!important;
+}
   
   .card-green a:hover{
     transform: scale(1.15);
@@ -80,11 +89,6 @@ article{
   }
   .card-green-place{
     margin-top: 180px;
-    background-color: var(--bg-page);
-  }
-  
-  .notice-target-container{
-    margin-top: 100px;
     background-color: var(--bg-page);
   }
   @media only screen and (max-width: 768px) {
