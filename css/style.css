@@ -20,6 +20,11 @@ section {
   height: 100%;
 }
 
+article{
+  background-color: #e3dcbeb7;
+  border-radius: 10px;
+}
+
 h1{
   color: var(--custom-green);
   border-bottom: 2px solid var(--custom-green) ;

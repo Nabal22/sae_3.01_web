@@ -2,7 +2,15 @@
   margin-top: 150px;
 }
 .contact-card-body{
-  width: 70%;
+  width: 75%;
+}
+
+article{
+  transition: all 0.1s;
+}
+
+article:hover{
+  transform: scale(1.05);
 }
 
 @media only screen and (max-width: 768px) {
