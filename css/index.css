@@ -12,11 +12,11 @@
     text-align: center;
     color: var(--custom-green) ;
     background-color: var(--bg-color);
+    transition: all 0.5s;
  }
  
  .welcome-title h1:hover{
-    color: var(--bg-color) ;
-    background-color: var(--custom-green);
+    transform: scale(1.15);
  }
  
  .welcome-title a{

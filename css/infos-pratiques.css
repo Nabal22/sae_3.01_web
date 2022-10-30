@@ -10,12 +10,6 @@ article{
 img{
   max-width: fit-content;
 }
-p{
-  padding: 5px;
-  margin: 10px;
-  border-left: 3px solid #6EAE68;
-  margin-left: 0px;
-}
 @media screen and (max-width: 1040px)
 {   
     article{

@@ -7,24 +7,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/demarches.css">
 
-        <script src="https://kit.fontawesome.com/ea6355d6e4.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/script.js" ></script>
+        <script type="text/javascript" src="js/demarches.js" ></script>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        
+        <link rel="stylesheet" href="css/all.css">
+        
     </head>
     <body>
-        <section class="bg-image"></section>
         <header class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
             
             <nav class="navbar d-flex flex-column flex-lg-row justify-content-center align-items-center bg-header shadow p-2 pb-3">
@@ -70,55 +68,80 @@
             </nav>
         </header>
 
-        <div class="welcome-title d-flex flex-column justify-content-around align-items-center m-3">
-            <h1 class="display-3 d-none d-xl-block p-4 shadow">Bienvenue sur le site de la communauté d'Agglomération GRAND SUD CARAIBE</h1>
-            <h1 class="display-6 d-xl-none p-4 shadow">Bienvenue sur le site de la communauté d'Agglomération GRAND SUD CARAIBE</h1>
-            <a href="#carousel" class="mt-6">
-                <img class="" src="media/img/arrow-down-sm.png" alt="arrow-down">
-            </a>
-        </div>
 
-        <div class="style-carousel d-flex justify-content-center">
-            <div id="carousel" class="carousel slide p-5" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel" data-slide-to="1"></li>
-                    <li data-target="#carousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="https://placeimg.com/1080/500/animals" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>My Caption Title (1st Image)</h5>
-                            <p>The whole caption will only show up if the screen is at least medium size.</p>
-                        </div>
+        <div class="content">
+            <h1>Je demande un branchement</h1>
+            <article><p>Pour créer ou modifier un branchement au réseau d'eau potable ou au réseau d'assainissement, il vous suffit remplir un formulaire en ligne. Un technicien se déplacera sur le lieu du futur branchement afin d'établir un devis. Ce devis est gratuit !​</p>​</article>
+            <div class="sub-group-form-class">
+                <label class="sub-card">
+                    <input type="radio" name="abonnement" value="standard" required checked>
+                    <i class="fa-solid fa-droplet"></i>
+                    <h3>Branchement au réseau d'eau potable</h3>
+                </label>
+                <label class="sub-card">
+                    <input type="radio" name="abonnement" value="gold">
+                    <i class="fa-solid fa-building"></i>
+                    <h3>Branchement au réseau d'assainissement</h3>
+                </label>
+                <label class="sub-card">
+                    <input type="radio" name="abonnement" value="platinium">
+                    <i class="fa-solid fa-check-square"></i>
+                    <h3>Contrôle de conformité</h3>
+                </label>
+            </div>
+
+            <form>
+                <div class="group-form-class">
+                    <div class="form-class">
+                        <input name="time" type="time" min="09:00" max="18:00" required>
+                        <label class="label-layout" for="time">Heure souhaitée*</label>
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="https://placeimg.com/1080/500/arch" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>My Caption Title (1st Image)</h5>
-                            <p>The whole caption will only show up if the screen is at least medium size.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="https://placeimg.com/1080/500/nature" alt="Third slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>My Caption Title (1st Image)</h5>
-                            <p>The whole caption will only show up if the screen is at least medium size.</p>
-                        </div>
+                    <div class="form-class">
+                        <input name="date" type="date" required placeholder="">
+                        <label class="label-layout" for="date">Jour souhaité</label>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
+                <p>Heure où jour du rendez-vous susceptible de changer</p>
+                <div class="group-form-class">
 
+                    <div class="form-class">
+                        <input name="prenom" type="text" required>
+                        <label class="label-layout" for="prenom">Prénom</label>
+                    </div>
+                    <div class="form-class">
+                        <input name="nom" type="text" required>
+                        <label class="label-layout" for="nom">Nom</label>
+                    </div>
+                </div>
+                <div class="form-class">
+                    <input type="email" name="email" required>
+                    <label class="label-layout" for="email"><i class="fa fa-envelope"></i>Email</label>
+                </div>
+                <div class="group-form-class">
+                    <div class="form-class">
+                        <input type="number" id="nRue" min="0" name="nRue" required>
+                        <label class="label-layout" for="nRue">N°</label>
+                    </div>
+                    <div class="form-class">
+                        <input name="rue" id="rue" type="text" required>
+                        <label class="label-layout" for="rue">Rue</label>
+                    </div>
+                </div>
+                <div class="group-form-class">
+                    <div class="form-class">
+                        <input name="ville" type="text" required>
+                        <label class="label-layout" for="ville">Ville</label>
+                    </div>
+                    <div class="form-class">
+                        <input name="pays" type="text" required>
+                        <label class="label-layout" for="pays">Pays</label>
+                    </div>
+                </div>
+                <input class="input-create-compte" type="submit" value="Envoyer la demande">
+            </form>
+            
+        </div>
+        
         <footer class="d-flex flex-column justify-content-center flex-md-row align-items-stretch">
             <div class="d-flex justify-content-around align-items-center text-center adress-footer pt-3 pr-3 pb-3">
                 <a class="nav-link text-center d-none d-md-block " href="index.html">

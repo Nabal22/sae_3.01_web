@@ -13,7 +13,6 @@ html, body {
   height: 100%;
   background: var(--bg-page)!important;
 }
-
 section {
   position: relative;
   width: 100%;
@@ -24,9 +23,14 @@ article{
   background-color: #e3dcbeb7;
   border-radius: 10px;
 }
-
+article p{
+  padding: 5px;
+  margin: 10px;
+  border-left: 3px solid #6EAE68;
+  margin-left: 0px;
+}
 h1{
-  color: var(--custom-green);
+  color: var(--custom-green)!important;
   border-bottom: 2px solid var(--custom-green) ;
 }
 
@@ -133,6 +137,10 @@ header{
 }
 
 /* FOOTER */  
+
+footer{
+  width: 100%;
+}
 
 .adress-footer {
   width: 70%;
