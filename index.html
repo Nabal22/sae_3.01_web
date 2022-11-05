@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>titre</title>
+        <title>CASBT | Acceuil</title>
         <meta name="description" content="description">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,11 +37,9 @@
                     <a class="mb-auto" href="demarches.html">Vos Démarches</a>
                     <div class="d-flex flex-row sm-flex-column sous-menu justify-content-center p-0"> 
                         <ul class="d-flex flex-column align-items-center p-0 m-2">
-                            <a href="demarches.html"><li>Contrôle d'assainissement</li></a>
-                            <a href="demarches.html"><li>Demande résiliation d'abonnement</li></a>
+                            <a href="demarches.html"><li>Demande de branchement ou contrôle</li></a>
                         </ul>
                         <ul class="d-flex flex-column align-items-center p-0 m-2">
-                            <a href="demarches.html"><li>Je demande un branchement</li></a>
                             <a href="démarches-page/coordonnées.html"><li>Modifier mes coordonnées</li></a>
                         </ul>
                     </div>  
@@ -73,7 +71,7 @@
         <div class="welcome-title d-flex flex-column justify-content-around align-items-center m-3">
             <h1 class="display-3 d-none d-xl-block p-4 shadow">Bienvenue sur le site de la communauté d'Agglomération GRAND SUD CARAIBE</h1>
             <h1 class="display-6 d-xl-none p-4 shadow">Bienvenue sur le site de la communauté d'Agglomération GRAND SUD CARAIBE</h1>
-            <a href="#map" class="mt-6">
+            <a href="#map" class="btn-display-carrousel mt-6">
                 <img class="" src="media/img/arrow-down-sm.png" alt="arrow-down">
             </a>
         </div>
@@ -132,7 +130,6 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-
             <iframe id="map" frameborder="0" allowfullscreen src="https://umap.openstreetmap.fr/fr/map/liste-des-communes-membres_827644#11/16.0376/-61.6512"></iframe>  
         </div>
         <footer class="d-flex flex-column justify-content-center flex-md-row align-items-stretch">
@@ -158,4 +155,11 @@
             </div>
         </footer>
     </body>
+    <script>
+        document.querySelector(".btn-display-carrousel").addEventListener('click',function(){
+            document.getElementById("carousel").classList.add("carousel-anim");
+            document.getElementById("map").classList.add("map-anim");
+        });
+
+    </script>
 </html>

@@ -39,6 +39,14 @@
   width: 56%;
 }
 
+.carousel-anim{
+  animation: slideToRight 1.5s;
+}
+
+.map-anim{
+  animation: slideToRight 1.5s;
+}
+
 @media screen and (max-width: 768px)
 {
   .navbar{
