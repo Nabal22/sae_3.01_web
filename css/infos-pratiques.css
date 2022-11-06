@@ -1,8 +1,3 @@
-html, body {
-  height: auto;
-} 
-
-
 article{
     margin-top: 200px;
     width: 70%;
@@ -40,9 +35,10 @@ img{
     min-width: 150px;
     min-height: 150px;
     border-radius: 50%;
-    background-color: #f3e066;
+    background-color: #edc86a;
     font-size: large;
-    transition: all 0.1s;
+    transition: all 0.5s;
+    animation: littleTobig 0.5s;
     -webkit-box-shadow: -7px 10px 20px 5px rgba(197, 187, 45, 0.596);
     -moz-box-shadow: -7px 10px 20px 5px rgba(197, 187, 45, 0.596);
     box-shadow: -7px 10px 20px 5px rgba(197, 187, 45, 0.596);
@@ -64,6 +60,47 @@ img{
     /* background-color: #4e7d4a;  */
     padding-right: 15px;
   }
+  /* les élus */
+.elus{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-elu{
+  width: 20%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff8ce;
+  color: #207007;
+  text-align: center;
+}
+.card-elu img{
+  border-radius: 10px;
+}
+.card-elu .contact-text{
+  display: none;
+}
+.card-elu:hover .contact-text{
+  display: block;
+  animation: littleTobig 0.5s;
+}
+
+.card-elu .contact-mail{
+  font-size: 20px;
+}
+
+.card-elu .fonction{
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px;
+}
   /* FAQ */
 
 .retour-faq a{
@@ -88,7 +125,8 @@ img{
     border-radius: 5px;
     text-align: center;
     font-size: xx-large;
-    transition: all 0.1s;
+    transition: all 0.5s;
+    animation: littleTobig 0.5s;
     -webkit-box-shadow: -7px 10px 20px 5px rgba(57,145,48,0.55);
     -moz-box-shadow: -7px 10px 20px 5px rgba(57,145,48,0.55);
     box-shadow: -7px 10px 20px 5px rgba(57,145,48,0.55);
@@ -118,10 +156,23 @@ img{
   .tarifs-tab{
     margin-top: 170px;
     width: 80%;
+
   }
+  /* tbody{
+    transition: all 0.3s;
+    animation: slideToLeft 0.3s ;
+  } */
+
   th{
     background-color: var(--custom-green)!important;
+    transition: all 0.3s;
+    animation: slideToLeft 0.5s ;
   }
+  td{
+    transition: all 0.3s;
+    animation: slideToRight 0.5s ;
+  }
+
   @media only screen and (max-width: 768px) {
     .tarifs-tab{
       margin-top: 225px;

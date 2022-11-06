@@ -12,6 +12,12 @@ html, body {
   height: 100%;
   background: var(--bg-page)!important;
 }
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 section {
   position: relative;
   width: 100%;
@@ -50,7 +56,6 @@ a:hover{
 
  /* HEADER */
 
-
 header{
   z-index: 1 ;
   position: fixed;
@@ -65,23 +70,31 @@ header{
   background-color: var(--bg-color);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  transition: all 0.3s;
+
 }
 
 .navbar li{
   list-style: none;
   padding: 0.3em;
   margin: 0.5em;
+  transition: all 0.3s;
+
 }
 
 .nav-link{
   font-size: large;
   font-weight: 500;
   width: 13em;
+  transition: all 0.3s;
+
 }
 
 .nav-link a {
   color: black;
   text-decoration: none;
+  transition: all 0.3s;
+
 }
 
 @keyframes apparitionSousMenu {
@@ -114,11 +127,15 @@ header{
   font-size:medium;
   font-weight: 400;
   margin: 0;
+  border-bottom: 3px solid #f8f4e2;
 }
 
 .sous-menu ul li:hover{
-  border-bottom: 1px solid rgb(209, 209, 24);
+  border-bottom: 3px solid rgb(209, 209, 24);
   cursor: pointer;
+  transform: scale(0.9);
+  transition: all 0.3s;
+
 }
 
 #menu-deroulant:hover > .sous-menu {
@@ -211,5 +228,19 @@ footer{
   }
   to{
     transform: translateX(0);
+  }
+}
+@keyframes littleTobig {
+  0%{
+    transform: scale(0);
+  }
+  10%{
+    transform: scale(0.3);
+  }
+  80%{
+    transform: scale(1.15);
+  }
+  100%{
+    transform: scale(1);
   }
 }
